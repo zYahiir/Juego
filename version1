@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class JuegoAdivinarOperaciones{
+    public static void main(String[] args){
+       	Scanner entrada = new Scanner(System.in);
+	int numero1,numero2,resultado;
+	System.out.println("Ingresa un numero: ");
+	numero1 = entrada.nextInt();
+	System.out.println("Ingresa un numero: ");
+	numero2 = entrada.nextInt();
+	System.out.println(numero1 + " * " + numero2 +" =");
+	resultado = entrada.nextInt();
+	System.out.println("¿Resultado coreccto?" + (numero1*numero2 == resultado));
+	
+	
+ }
+}
