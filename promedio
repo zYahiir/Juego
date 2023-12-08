@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Promedio{
+    public static void main(String[]args){
+	Scanner entrada = new Scanner(System.in);
+	String nombre_alumno, materia1,materia2,materia3,materia4,grupo;
+	double cal1,cal2,cal3,cal4,prom;
+
+	System.out.println("Ingresa el nombre del alumno:");
+	nombre_alumno = entrada.nextLine();
+	nombre_alumno = nombre_alumno.toUpperCase();
+	System.out.println("Nombre de la materia");
+	materia1 = entrada.nextLine();
+	materia1 = materia1.toUpperCase();
+	System.out.println("Ingresa tu calificacion: ");
+	cal1 = entrada.nextDouble();
+	entrada.nextLine();
+
+	System.out.println("Nombre de la materia");
+	materia2 = entrada.nextLine();
+	materia2 = materia2.toUpperCase();
+	System.out.println("Ingresa tu calificacion: ");
+	cal2 = entrada.nextDouble();
+	entrada.nextLine();
+
+	System.out.println("Nombre de la materia");
+	materia3 = entrada.nextLine();
+	materia3 = materia3.toUpperCase();
+	System.out.println("Ingresa tu calificacion: ");
+	cal3 = entrada.nextDouble();
+	entrada.nextLine();
+
+	System.out.println("Nombre de la materia");
+	materia4 = entrada.nextLine();
+	materia4 = materia4.toUpperCase();
+	System.out.println("Ingresa tu calificacion: ");
+	cal4 = entrada.nextDouble();
+	entrada.nextLine();
+	
+	System.out.println("Ingresa el grupo del alumno");
+	grupo = entrada.nextLine();
+	grupo = grupo.toUpperCase();
+	
+	prom = (cal1+cal2+cal3+cal4)/4;
+	
+	System.out.println("Promedio de: " + nombre_alumno + "\nes de: " + prom + " Aprovado?" + (prom>=6.0)+grupo);
+	System.out.println("Promedio redondeado: " + Math.round(prom) + "\nfloor:" + Math.floor(prom) + "\ncell:" + Math.ceil(prom));
+	
+ }
+}
